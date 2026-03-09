@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" client="site" method="upgrade">
 
-    <name>MOD_JTWHATSAPP</name>
+    <name>JT WhatsApp Button</name>
     <author>JoomTheme</author>
     <authorEmail>support@joomtheme.com</authorEmail>
     <authorUrl>https://joomtheme.com</authorUrl>
@@ -12,7 +12,9 @@
     <description>MOD_JTWHATSAPP_DESC</description>
 
     <updateservers>
-    <server type="extension" priority="1" name="JT WhatsApp Button Update">https://raw.githubusercontent.com/joomtheme/mod_jtwhatsapp/main/updates.xml</server>
+        <server type="extension" name="JT WhatsApp Button Update">
+            https://raw.githubusercontent.com/joomtheme/mod_jtwhatsapp/main/updates.xml
+        </server>
     </updateservers>
 
     <namespace path="src">JoomTheme\Module\JTWhatsApp</namespace>
@@ -41,6 +43,7 @@
                     type="text"
                     label="MOD_JTWHATSAPP_PHONE"
                     description="MOD_JTWHATSAPP_PHONE_DESC"
+                    filter="string"
                 />
 
                 <field
@@ -48,6 +51,7 @@
                     type="text"
                     label="MOD_JTWHATSAPP_MESSAGE"
                     description="MOD_JTWHATSAPP_MESSAGE_DESC"
+                    filter="string"
                 />
 
                 <field
@@ -55,6 +59,7 @@
                     type="list"
                     label="MOD_JTWHATSAPP_POSITION"
                     default="right"
+                    validate="options"
                 >
                     <option value="right">Right</option>
                     <option value="left">Left</option>
