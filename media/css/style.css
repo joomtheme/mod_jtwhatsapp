@@ -15,19 +15,64 @@
 .jt-whatsapp a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
     background: #25d366;
     color: #ffffff;
-    padding: 12px 16px;
-    border-radius: 50px;
+    padding: 14px 18px;
+    border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
     line-height: 1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
 .jt-whatsapp a:hover,
 .jt-whatsapp a:focus {
     text-decoration: none;
-    opacity: 0.95;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+    opacity: 1;
+}
+
+.jt-whatsapp__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.jt-whatsapp__text {
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .jt-whatsapp {
+        bottom: 16px;
+    }
+
+    .jt-right {
+        right: 16px;
+    }
+
+    .jt-left {
+        left: 16px;
+    }
+
+    .jt-whatsapp a {
+        padding: 12px 16px;
+        gap: 8px;
+        font-size: 15px;
+    }
+
+    .jt-whatsapp__icon {
+        width: 24px;
+        height: 24px;
+    }
 }
