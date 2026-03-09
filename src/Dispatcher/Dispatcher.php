@@ -6,14 +6,17 @@
  * @copyright   (C) 2026 JoomTheme
  * @license     GNU General Public License version 2 or later
  */
+
 namespace JoomTheme\Module\JTWhatsApp\Site\Dispatcher;
 
-defined('_JEXEC') or die;
+\defined('_JEXEC') or die;
 
-class Dispatcher
+use Joomla\CMS\Dispatcher\DispatcherInterface;
+
+class Dispatcher implements DispatcherInterface
 {
     public function dispatch()
     {
-        // Reserved for future logic
+        require \Joomla\CMS\Helper\ModuleHelper::getLayoutPath('mod_jtwhatsapp', 'default');
     }
 }
