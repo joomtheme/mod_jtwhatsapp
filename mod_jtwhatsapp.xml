@@ -20,11 +20,9 @@
     <namespace path="src">JoomTheme\Module\JTWhatsApp</namespace>
 
     <files>
-        <filename module="mod_jtwhatsapp">mod_jtwhatsapp.php</filename>
-        <folder>services</folder>
-        <folder>src</folder>
-        <folder>tmpl</folder>
-        <folder>media</folder>
+    <filename module="mod_jtwhatsapp">mod_jtwhatsapp.php</filename>
+    <folder>tmpl</folder>
+    <folder>media</folder>
     </files>
 
     <languages>
