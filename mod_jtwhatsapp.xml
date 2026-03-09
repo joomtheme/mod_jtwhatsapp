@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" client="site" method="upgrade">
-
     <name>JT WhatsApp Button</name>
     <author>JoomTheme</author>
     <authorEmail>support@joomtheme.com</authorEmail>
@@ -8,21 +7,17 @@
     <creationDate>2026-03-09</creationDate>
     <copyright>(C) 2026 JoomTheme</copyright>
     <license>GNU General Public License version 2 or later</license>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
     <description>MOD_JTWHATSAPP_DESC</description>
 
     <updateservers>
-        <server type="extension" name="JT WhatsApp Button Update">
-            https://raw.githubusercontent.com/joomtheme/mod_jtwhatsapp/main/updates.xml
-        </server>
+        <server type="extension" name="JT WhatsApp Button Update">https://raw.githubusercontent.com/joomtheme/mod_jtwhatsapp/main/updates.xml</server>
     </updateservers>
 
-    <namespace path="src">JoomTheme\Module\JTWhatsApp</namespace>
-
     <files>
-    <filename module="mod_jtwhatsapp">mod_jtwhatsapp.php</filename>
-    <folder>tmpl</folder>
-    <folder>media</folder>
+        <filename module="mod_jtwhatsapp">mod_jtwhatsapp.php</filename>
+        <folder>tmpl</folder>
+        <folder>media</folder>
     </files>
 
     <languages>
@@ -35,36 +30,13 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-
-                <field
-                    name="phone"
-                    type="text"
-                    label="MOD_JTWHATSAPP_PHONE"
-                    description="MOD_JTWHATSAPP_PHONE_DESC"
-                    filter="string"
-                />
-
-                <field
-                    name="message"
-                    type="text"
-                    label="MOD_JTWHATSAPP_MESSAGE"
-                    description="MOD_JTWHATSAPP_MESSAGE_DESC"
-                    filter="string"
-                />
-
-                <field
-                    name="position"
-                    type="list"
-                    label="MOD_JTWHATSAPP_POSITION"
-                    default="right"
-                    validate="options"
-                >
-                    <option value="right">Right</option>
-                    <option value="left">Left</option>
+                <field name="phone" type="text" label="MOD_JTWHATSAPP_PHONE" description="MOD_JTWHATSAPP_PHONE_DESC" filter="string" />
+                <field name="message" type="text" label="MOD_JTWHATSAPP_MESSAGE" description="MOD_JTWHATSAPP_MESSAGE_DESC" filter="string" />
+                <field name="position" type="list" label="MOD_JTWHATSAPP_POSITION" description="MOD_JTWHATSAPP_POSITION_DESC" default="right" validate="options">
+                    <option value="right">MOD_JTWHATSAPP_POSITION_RIGHT</option>
+                    <option value="left">MOD_JTWHATSAPP_POSITION_LEFT</option>
                 </field>
-
             </fieldset>
         </fields>
     </config>
-
 </extension>
