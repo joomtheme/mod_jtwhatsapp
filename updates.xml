@@ -12,7 +12,7 @@
             <downloadurl
                 type="full"
                 format="zip"
-                sha256="9a97c34c6b88ac607888a9c126b6b5a6d91468fb917243b63bd668cb457a8361"
+                sha256="be0e57432bcee1739d6cfb447aa70ad1e7e34ea9db592eb73b0043687989d9a9"
             >https://github.com/joomtheme/mod_jtwhatsapp/releases/download/v1.0.0/mod_jtwhatsapp_v1.0.0.zip</downloadurl>
         </downloads>
         <targetplatform name="joomla" version="6.*"/>
