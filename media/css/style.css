@@ -1,1 +1,23 @@
 
+.jt-whatsapp {
+position:fixed;
+bottom:20px;
+z-index:9999;
+}
+
+.jt-right{
+right:20px;
+}
+
+.jt-left{
+left:20px;
+}
+
+.jt-whatsapp a{
+background:#25D366;
+color:#fff;
+padding:12px 16px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
