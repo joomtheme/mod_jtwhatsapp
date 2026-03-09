@@ -9,18 +9,6 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
-
-$wa = Factory::getApplication()->getDocument()->getWebAssetManager();
-$wa->registerAndUseStyle(
-    'mod_jtwhatsapp.style',
-    'modules/mod_jtwhatsapp/media/css/style.css'
-);
-
-$phone    = preg_replace('/\D+/', '', (string) $params->get('phone', ''));
-$message  = rawurlencode((string) $params->get('message', ''));
-$position = (string) $params->get('position', 'right');
-
 if ($phone === '')
 {
     return;
