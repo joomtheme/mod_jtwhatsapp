@@ -12,7 +12,7 @@
     <description>MOD_JTWHATSAPP_DESC</description>
 
     <updateservers>
-    <server type="extension" priority="1" name="JT WhatsApp Button Update">https://joomtheme.com/updates/mod_jtwhatsapp.xml</server>
+    <server type="extension" priority="1" name="JT WhatsApp Button Update">https://raw.githubusercontent.com/joomtheme/mod_jtwhatsapp/main/updates.xml</server>
     </updateservers>
 
     <namespace path="src">JoomTheme\Module\JTWhatsApp</namespace>
