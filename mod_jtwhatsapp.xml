@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+
+    <name>MOD_JTWHATSAPP</name>
+    <author>JoomTheme</author>
+    <authorEmail>support@joomtheme.com</authorEmail>
+    <authorUrl>https://joomtheme.com</authorUrl>
+    <creationDate>2026-03-09</creationDate>
+    <copyright>(C) 2026 JoomTheme</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>MOD_JTWHATSAPP_DESC</description>
+
+    <updateservers>
+    <server type="extension" priority="1" name="JT WhatsApp Button Update">https://joomtheme.com/updates/mod_jtwhatsapp.xml</server>
+    </updateservers>
+
+    <namespace path="src">JoomTheme\Module\JTWhatsApp</namespace>
+
+    <files>
+        <filename module="mod_jtwhatsapp">mod_jtwhatsapp.php</filename>
+        <folder>services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <folder>media</folder>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_jtwhatsapp.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_jtwhatsapp.sys.ini</language>
+        <language tag="tr-TR">language/tr-TR/tr-TR.mod_jtwhatsapp.ini</language>
+        <language tag="tr-TR">language/tr-TR/tr-TR.mod_jtwhatsapp.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field
+                    name="phone"
+                    type="text"
+                    label="MOD_JTWHATSAPP_PHONE"
+                    description="MOD_JTWHATSAPP_PHONE_DESC"
+                />
+
+                <field
+                    name="message"
+                    type="text"
+                    label="MOD_JTWHATSAPP_MESSAGE"
+                    description="MOD_JTWHATSAPP_MESSAGE_DESC"
+                />
+
+                <field
+                    name="position"
+                    type="list"
+                    label="MOD_JTWHATSAPP_POSITION"
+                    default="right"
+                >
+                    <option value="right">Right</option>
+                    <option value="left">Left</option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
