@@ -28,7 +28,7 @@ JT WhatsApp Button is a simple floating WhatsApp button module for Joomla.
 
 JoomTheme  
 https://joomtheme.com  
-support@joomtheme.com
+https://joomtheme.com/docs/
 
 ## License
 
