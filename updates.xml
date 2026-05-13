@@ -6,13 +6,13 @@
         <element>mod_jtwhatsapp</element>
         <type>module</type>
         <client>site</client>
-        <version>1.0.9</version>
+        <version>1.1.2</version>
         <infourl title="JT WhatsApp Button">https://github.com/joomtheme/mod_jtwhatsapp/releases</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/joomtheme/mod_jtwhatsapp/releases/download/v1.0.9/mod_jtwhatsapp_v1.0.9.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/joomtheme/mod_jtwhatsapp/releases/download/v1.1.2/mod_jtwhatsapp_v1.1.2.zip</downloadurl>
         </downloads>
-        <sha256>7b041c1f3f6101c65ab1f443902090f205f06b225fa808f88e5b77298de03826</sha256>
-        <targetplatform name="joomla" version="6.*"/>
-        <php_minimum>8.1.0</php_minimum>
+        <sha256>a2d54ff5748fad001d60a2955a0bed3ed54159a2b0caf1cc076212f7e74a2b84</sha256>
+        <targetplatform name="joomla" version="6\..*"/>
+        <php_minimum>8.3.0</php_minimum>
     </update>
 </updates>
